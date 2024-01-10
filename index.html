@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 794px;
+        height: 1123px;
+        border: 1px dashed black;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
+      .container {
+        margin: auto;
+        padding: 2rem;
+      }
+
+      h2 {
+        margin-left: 1rem;
+      }
+
+      table {
+        margin: 1rem;
+        margin-bottom: 2rem;
+        font-size: 0.75rem;
+      }
+
+      .summary-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        width: fit-content;
+        border: 1px solid black;
+      }
+
+      .summary-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.75rem;
+      }
+
+      .summary-items span {
+        font-weight: 700;
+      }
+
+      .summary-items em {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bislerium Report</h1>
+
+      <h2>Top 5 Best Selling Coffees</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Coffee Name</th>
+            <th>Total Quantities</th>
+            <th>Total Revenue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Cappuccino</td>
+            <td>50</td>
+            <td>7000</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+
+      <h2>Top 5 Best Selling Addins</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Add-In Name</th>
+            <th>Total Quantities</th>
+            <th>Total Revenue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Milk</td>
+            <td>80</td>
+            <td>6000</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+
+      <div class="summary-wrapper">
+        <div class="summary-items">
+          <span>Total AddIns Revenue:&nbsp;</span>
+          <em>6000.00</em>
+        </div>
+        <div class="summary-items">
+          <span>Total Coffee Revenue:&nbsp;</span>
+          <em>8000.00</em>
+        </div>
+        <div class="summary-items">
+          <span>Grand Total:&nbsp;</span>
+          <em>14000.00</em>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
